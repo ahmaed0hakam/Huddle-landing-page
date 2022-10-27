@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#back1 {
+  width: auto;
+  height: auto;
+  position: absolute;
+}
+#back2 {
+  display: none;
+}
+#logo {
+  width: 135px;
+  margin: 25px;
+}
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+#illustration {
+  width: 100%;
+}
+.boss {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  min-width: 295.2px;
+  row-gap: 30px;
+
+}
+.part1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.part2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  row-gap: 20px;
+
+}
+h1 {
+  font-size: 26px;
+}
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  color: #674baf;
+  width: 70%;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+
+  font-weight: bold;
+}
+button:hover {
+  background-color: #e980e7;
+  color: white;
+}
+.icon{
+  margin-top: 15px;
+  width: 20px;
+  color: white;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  margin-bottom: 30px;
+}
+#facebook:hover {
+  content: url("../images/facebook_pink.png")
+}
+#twitter:hover {
+  content: url("../images/twitter_pink.png")
+}
+#instagram:hover {
+  content: url("../images/instagram_pink.png")
+}
+@media only screen and (min-width:376px) {
+  body {
+    overflow: hidden;
+    display: block;
+  }
+  main{
+    display: block;
+  }
+  .boss {
+    flex-direction: row;
+    column-gap: 50px;
+  }
+  #back2 {
+    display: block;
+    width: auto;
+    height: auto;
+    position: absolute;
+  }
+  #back1 {
+    display: none;
+  }
+  .part2 {
+    text-align:left;
+    align-items: flex-start;
+  }
+  button{
+    width: 30%;
+    padding: 15px;
+    font-size: 16px;
+  }
+  .icons {
+    position: absolute;
+    right: 100px;
+  }
+}
